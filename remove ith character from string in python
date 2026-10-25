@@ -1,0 +1,9 @@
+text = input("Enter a string: ")
+i = int(input("Enter the index to remove: "))
+
+if 0 <= i < len(text):
+    result = text[:i] + text[i + 1:]
+    print("String after removing character:", result)
+else:
+    print("Invalid index")
+
